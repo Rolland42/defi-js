@@ -10,7 +10,7 @@
  <form action ="">
     <label for="password">Password</label>
     <input type="password" name="passord" id="input">
-    <input id="ckeckbox"type="checkbox">
+    <input id="checkbox" type="checkbox">
     <span id="display">Show</span><br>
     <input type="button" value="send">
   </form>  
