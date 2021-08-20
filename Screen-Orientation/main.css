@@ -8,11 +8,45 @@ body{
   #rotateScreen{
     display: none;
     text-align: center;
-    margin-top: 50vh;
+    margin-top:20vh;
     transform: translateY(-50%);
+  }
+
+
+  .rotate{
+    background-image: url(rotate.gif);
+    background-size: auto;
   }
   
   #displayContent{
     display: none;
   }
+  
+  .p{
+    writing-mode:horizontal-tb;
+    text-orientation: sideways;
+    font-size:10vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+
+  .horizontal-scroll-wrapper {
+    width: 10vh;
+    overflow-y: hidden;
+    overflow-x: auto;
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    transform:rotate(-90deg) translateX(-100px);
+    writing-mode:horizontal-tb;
+    text-orientation: sideways;
+  }
+
+  .horizontal-scroll-wrapper > div {
+    width: 10vh;
+    transform: rotate(90deg);
+    transform-origin: right top;
+    writing-mode:horizontal-tb;
+    text-orientation: sideways;
+  }
+
   
